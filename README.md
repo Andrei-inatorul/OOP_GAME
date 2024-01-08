@@ -23,7 +23,8 @@ Here is a table of mechanics included in the game.
 
  - [X] Release barebone version until deadline
  - [ ] Add enemies and combat
- - [ ] Fix bug that lets you pass trough platforms if they are adjacent to a wall that has spikes on top (see lvl 2)
+ - [ ] Bug Fixes
+ - [ ] Better camera system
  - [ ] Add more levels and environment, terrain variation
  - [ ] Add sounds
 
