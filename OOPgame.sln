@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOPgame", "OOPgame.vcxproj", "{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{803920AD-BFA1-4787-B3B8-9BCAB4C9BEA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A1955DA6-78BD-43A7-ACE5-CAEB16BF121A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Debug|x64.ActiveCfg = Debug|x64
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Debug|x64.Build.0 = Debug|x64
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Debug|x86.ActiveCfg = Debug|Win32
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Debug|x86.Build.0 = Debug|Win32
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Release|x64.ActiveCfg = Release|x64
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Release|x64.Build.0 = Release|x64
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Release|x86.ActiveCfg = Release|Win32
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7EC2961-2FBA-44DE-BF1F-9ABF6C965690} = {A1955DA6-78BD-43A7-ACE5-CAEB16BF121A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6317998-5FD4-426C-A2AE-9341612A42A0}
+	EndGlobalSection
+EndGlobal
