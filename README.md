@@ -19,6 +19,14 @@ Here is a table of mechanics included in the game.
 
 ## Gameplay
 ![gameplay photo](https://imgur.com/4refJ1d.png)
+## Roadmap
+
+ - [X] Release barebone version until deadline
+ - [ ] Add enemies and combat
+ - [ ] Fix bug that lets you pass trough platforms if they are adjacent to a wall that has spikes on top (see lvl 2)
+ - [ ] Add more levels and environment, terrain variation
+ - [ ] Add sounds
+
 ## Credits
 
  - [Player Spritesheet](https://penzilla.itch.io/hooded-protagonist)
