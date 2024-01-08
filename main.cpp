@@ -11,7 +11,7 @@ int main(int argc,char* argv[])
 	Uint32 frameStart;
 	int frameTime;
 
-	game->init("Samurai Quest - Lefter Andrei B)", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, false);
+	game->init("Spirit Of The Forest - Lefter Andrei 1208A", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, false);
 	game->Start();
 	while (game->running())
 	{
