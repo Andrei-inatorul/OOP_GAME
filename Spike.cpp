@@ -10,6 +10,7 @@ void Spike::Update(gameObject* go)
 {
 	if (SDL_HasIntersectionF(&go->Hitbox, &this->Hitbox))
 	{
+		SDL_Delay(500);
 		go->Position.x = 0;
 		go->Position.y = 611;
 	}

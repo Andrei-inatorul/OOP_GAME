@@ -8,7 +8,6 @@ Map::Map(int level, int sizeX, int sizeY, float scale)
 	this->sizeY = sizeY;
 	this->level = level;
 	this->scale = scale;
-	
 	switch (level)
 	{
 	case 1:
@@ -46,6 +45,15 @@ Map::Map(int level, int sizeX, int sizeY, float scale)
 		}
 		this->spritePath = "./Assets/Maps/Map1Bg.png";
 		break;
+	default:
+		for (int i = 0; i < sizeY; ++i)
+		{
+			for (int j = 0; j < sizeX; ++j)
+			{
+				map[i][j] = 0;
+			}
+		}
+		break;
 	}
 	}
 	objects = nullptr;
@@ -78,7 +86,7 @@ void Map::Create(SDL_Renderer* renderer)
 				objects[k]->setTexture(renderer);
 				break;
 			case 4:
-				objects[k] = new Spike(Vector2(j * 32 * scale, offset + i * 32 * scale + 10*scale), Vector2(32, 32), "./Assets/Maps/spikes2.png", scale, false);// 
+				objects[k] = new Spike(Vector2(j * 32 * scale, offset + i * 32 * scale + 10*scale), Vector2(32, 32), "./Assets/Maps/spikes3.png", scale, false);// 
 				objects[k]->setTexture(renderer);
 				break;
 			case 5:

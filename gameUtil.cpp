@@ -384,8 +384,9 @@ void Game::render()
 	SDL_RenderClear(renderer);
 	map->RenderBG(renderer, camera);
 	player->Render(renderer, camera);
-	//SET RENDERER DRAW COLOR TO RED FOR THINGS THAT DON T HAVE TEXURES 
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+	//SET RENDERER DRAW COLOR TO RED FOR THINGS THAT DON T HAVE TEXURES (they are the same color as the background now) 
+	// uncomment for debugging
+	//SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 	map->Render(renderer, camera);
 	//SET RENDERER DRAW COLOR TO BACKGROUND COLOR (DARK GREEN)
 	SDL_SetRenderDrawColor(renderer, 3, 42, 50, 255);
