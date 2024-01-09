@@ -74,7 +74,7 @@ void Map::Create(SDL_Renderer* renderer)
 			switch (map[i][j])
 			{
 			case 1:
-				objects[k] = new gameObject(Vector2(j * 32 * scale, offset+i* 32 * scale), Vector2(32, 32), "./Assets/Maps/ground1.png", scale);//
+				objects[k] = new gameObject(Vector2(j * 32 * scale, offset+i* 32 * scale), Vector2(32, 32), "./Assets/Maps/ground1.png", scale);
 				objects[k]->setTexture(renderer);
 				break;
 			case 2:
@@ -86,7 +86,7 @@ void Map::Create(SDL_Renderer* renderer)
 				objects[k]->setTexture(renderer);
 				break;
 			case 4:
-				objects[k] = new Spike(Vector2(j * 32 * scale, offset + i * 32 * scale + 10*scale), Vector2(32, 32), "./Assets/Maps/spikes3.png", scale, false);// 
+				objects[k] = new Spike(Vector2(j * 32 * scale, offset + i * 32 * scale), Vector2(32, 32), "./Assets/Maps/spikes3.png", scale, false);
 				objects[k]->setTexture(renderer);
 				break;
 			case 5:
@@ -103,7 +103,6 @@ void Map::Create(SDL_Renderer* renderer)
 				portal = objects[k];
 				break;
 			default:
-				//objects[k] = new gameObject(Vector2(j * 32 * scale, offset + i * 32 * scale), Vector2(32, 32), NULL, scale, false);
 				objects[k] = nullptr;
 				break;
 			}
@@ -121,9 +120,9 @@ void Map::Update(Player* player)
 		for (j = 0; j < sizeX; ++j)
 		{
 			if (objects[k] != nullptr)
-			{
+			{	
+				player->checkCollision(objects[k]);
 				objects[k]->Update(player);
-				player->Entity::checkCollision(objects[k]);
 			}
 			k++;
 		}
