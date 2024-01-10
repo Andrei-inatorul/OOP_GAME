@@ -1,5 +1,6 @@
 
-![GitHub all releases](https://img.shields.io/github/downloads/Andrei-inatorul/OOP_GAME/total?style=flat-square&logo=GitHub&labelColor=%23000000) ![Static Badge](https://img.shields.io/badge/C++%20SDL2-blue?style=for-the-badge&logo=cplusplus)
+![GitHub all releases](https://img.shields.io/github/downloads/Andrei-inatorul/OOP_GAME/total?style=flat-square)
+![Static Badge](https://img.shields.io/badge/C++%20SDL2-blue?style=for-the-badge&logo=cplusplus)
 
 ## About
 This project was as an optional assignment for my Object-Oriented Programming (OOP) class, and it turned out to be a fun experience that help me apply theoretical concepts in a practical context.
