@@ -1,6 +1,5 @@
 
-![GitHub all releases](https://img.shields.io/github/downloads/Andrei-inatorul/OOP_GAME/total?style=flat-square)
-![Static Badge](https://img.shields.io/badge/C++%20SDL2-blue?style=for-the-badge&logo=cplusplus)
+![GitHub all releases](https://img.shields.io/github/downloads/Andrei-inatorul/OOP_GAME/total?style=flat-square&logo=GitHub&labelColor=%23000000) ![Static Badge](https://img.shields.io/badge/C++%20SDL2-blue?style=for-the-badge&logo=cplusplus)
 
 ## About
 This project was as an optional assignment for my Object-Oriented Programming (OOP) class, and it turned out to be a fun experience that help me apply theoretical concepts in a practical context.
@@ -17,15 +16,16 @@ Here is a table of mechanics included in the game.
 | Spikes with reset | Hazardous spikes that, when touched, reset the player to the starting position. |
 | Game data saving| The game saves the current level and gives the player the ability to continue where he left off or start a new game from the main menu|
 |Animations| Beautiful animations to bring life to the player character|
+|Enemies| A scary forest guardian foe 🌲|
+|Speedrun strats| A strategy to avoid obstacles fast (totally intended😎)|
 
 ## Gameplay
 ![gameplay photo](https://imgur.com/4refJ1d.png)
 ## Roadmap
 
  - [X] Release barebone version until deadline
- - [ ] Add enemies and combat
- - [ ] Bug Fixes
- - [ ] Better camera system
+ - [ ] Add combat
+ - [ ] Fix bug that lets you pass trough platforms if they are adjacent to a wall that has spikes on top (see lvl 2)
  - [ ] Add more levels and environment, terrain variation
  - [ ] Add sounds
 
@@ -37,8 +37,9 @@ Here is a table of mechanics included in the game.
  - https://lazyfoo.net/tutorials/SDL/
  - https://wiki.libsdl.org/SDL2/
  - [The first 2-3 tutorials in this series helped me build the foundation of the game](https://www.youtube.com/watch?v=QQzAHcojEKg&list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx)
+ - [Enemy Spites](https://eddies-workshop.itch.io/sprout)
  ## Conclusion
  Fun learning experience, 10/10 would do it again, i would 100% do it better if i had to start over but good first time.
  ## Contact
  For any other questions regarding this project contact me at:
- ``andrei.lefter@student.tuiasi.ro)``
+ ``andrei.lefter@student.tuiasi.ro``
