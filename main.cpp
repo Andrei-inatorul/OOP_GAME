@@ -1,6 +1,6 @@
 #include "gameUtil.h"
 #include "gameObject.h"
-//#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup") // hide console ( comment this if debugging)
+#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup") // hide console ( comment this if debugging)
 int main(int argc,char* argv[])
 {
 	Game* game = new Game();

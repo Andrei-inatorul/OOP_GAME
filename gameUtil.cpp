@@ -199,7 +199,7 @@ void Game::Start() //things that are set up at the beginning of the game loop
 	{
 		std::cout << e << "\n";
 		file.close();
-		file.open("./savegame.txt", std::ios::out | std::ios::trunc);
+		file.open("./savegame.txt", std::ios::out );
 		lvl = 1;
 		file << lvl;
 	}
@@ -362,7 +362,7 @@ void Game::update()
 				player->Position.x = 0;
 				player->Position.y = 661;
 				file.close();
-				file.open("./savegame.txt", std::ios::out | std::ios::trunc);
+				file.open("./savegame.txt", std::ios::out);
 				file << lvl;
 			}
 			else
@@ -388,6 +388,10 @@ void Game::render()
 	// uncomment for debugging
 	//SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 	map->Render(renderer, camera);
+//	SDL_FRect temp = player->Hitbox;
+//	temp.x -= camera->Position.x;			//render player hitbox
+//	temp.y -= camera->Position.y;
+//	SDL_RenderDrawRectF(renderer, &temp);
 	//SET RENDERER DRAW COLOR TO BACKGROUND COLOR (DARK GREEN)
 	SDL_SetRenderDrawColor(renderer, 3, 42, 50, 255);
 	//UPDATE WINDOW

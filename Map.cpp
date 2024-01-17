@@ -1,6 +1,7 @@
 #include <SDL_image.h>
 #include "Map.h"
 #include "Spike.h"
+#include "Enemy.h"
 
 Map::Map(int level, int sizeX, int sizeY, float scale)
 {
@@ -101,6 +102,10 @@ void Map::Create(SDL_Renderer* renderer)
 				objects[k] = new gameObject(Vector2(j * 32 * scale, offset + i * 32 * scale), Vector2(32, 32), "./Assets/Maps/pisicutaaa.png", scale, false);
 				objects[k]->setTexture(renderer);
 				portal = objects[k];
+				break;
+			case 8:
+				objects[k] = new Enemy(Vector2(j * 32 * scale, offset + i * 32 * scale - 32*scale), Vector2(64, 64), "./Assets/Maps/Sprout.png", scale, 100, 300);
+				objects[k]->setTexture(renderer);
 				break;
 			default:
 				objects[k] = nullptr;

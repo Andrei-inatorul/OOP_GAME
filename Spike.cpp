@@ -15,3 +15,8 @@ void Spike::Update(gameObject* go)
 		go->Position.y = 611;
 	}
 }
+
+Spike::~Spike()
+{
+
+}

@@ -25,8 +25,6 @@ Player::Player():Entity()
 	speed = 300;
 	groundCheck = {0,0,0,0};
 	animation = IDLE_R;
-	animationFrame = 0;
-	direction = 1;
 }
 
 Player::Player(
@@ -50,6 +48,7 @@ Player::Player(
 	animationFrame = 0;
 	direction = 1;
 }
+
 Player::Player(
 	Vector2 Position,
 	Vector2 Dimensions,

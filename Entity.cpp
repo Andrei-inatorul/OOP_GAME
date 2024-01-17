@@ -28,7 +28,10 @@ Entity::Entity(Vector2 position, Vector2 dims, const char* spritePath, float sca
 	this->hp = hp;
 	maxhp = hp;
 }
+Entity::~Entity()
+{
 
+}
 void Entity::checkCollision(gameObject* go)
 {
 	if (go->isSolid == true)

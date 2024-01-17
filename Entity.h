@@ -8,6 +8,7 @@ public:
 	Entity(Vector2 position, Vector2 dims,const SDL_FRect Collider,
 		const char* spritePath,float scale, short hp);
 	Entity(Vector2 position, Vector2 dims, const char* spritePath, float scale, short hp);
+	~Entity();
 	Vector2 Velocity;
 	void checkCollision(gameObject* go);
 	void checkCollision(Entity* go);
@@ -17,6 +18,8 @@ public:
 	void Heal(int ammount);
 	void setHp(int ammount);
 	int getHp();
+	short animationFrame = 0;
+	bool direction = 1;
 protected:
 	enum states;
 	int hp;

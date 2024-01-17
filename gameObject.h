@@ -28,7 +28,7 @@ public:
 	//void Render(SDL_Renderer* renderer);
 	void UpdateCamera(Camera* camera);
 	virtual void Update(gameObject* go);
-	void Render(SDL_Renderer* renderer, Camera* camera);
+	virtual void Render(SDL_Renderer* renderer, Camera* camera);
 	void Render(SDL_Renderer* renderer);
 	float scale;
 protected:
